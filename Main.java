@@ -149,9 +149,12 @@ public class Main {
       //working with scanner class and text input
       System.out.println("Greetings human! What is your name?");
       Scanner scan = new Scanner(System.in);
-   
+      String name = scan.nextLine();
+      System.out.print("Hello " + name); 
+      
+      scan.close();
 
-      System.out.println("Hello World");
+     // System.out.println("Hello World");
 
 
 
