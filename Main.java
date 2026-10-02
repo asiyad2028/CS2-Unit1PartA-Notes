@@ -9,82 +9,78 @@ pseudocode:simplified code to outline programs/algorithum. (ex- add func ()
 /* What is the difference between java script and java? They are entirely different languages but they have a shared name due to 1990s marketing. Java is a statically typed, class-based language that compiles to bytecode to run on a Virtual Machine (JVM), making it most useful for Android apps, corporate backends, and enterprise software. JavaScript is a dynamically and weakly typed, prototype-based scripting language that runs natively in web browsers to create interactive websites and full-stack web applications. While Java relies on multi-threading to handle complex, concurrent tasks, JavaScript uses a single-threaded asynchronous event loop to keep web pages responsive.*/
 
 public class Main {
-
    public static void main(String []args) {
-      System.out.println("Hello World");
-   }
-}
+      // all code goes here 
+      /* notes day 2: Object-oriented programming: programming built on classes and objects
+      ex.
+      public class MyClass{
+      ~~~~~~~~~~~~~~~~~(numofStudent)
+      ~~~~~~~~~~~~~(Subject)
+      }
+      Class:blueprint of an object (no memory)
+      Object:actual implementation(gets stored in memory)
+      method:reusable chunk of code that accomplishes an action(function)
+      ex. main method (entry point to our code)
+      -> main(){
+      }
+      we code in an IDE with a compiler
+      compilers translate our java to binary
 
-/* notes day 2: Object-oriented programming: programming built on classes and objects
-ex.
-public class MyClass{
-~~~~~~~~~~~~~~~~~(numofStudent)
-~~~~~~~~~~~~~(Subject)
-}
-Class:blueprint of an object (no memory)
-Object:actual implementation(gets stored in memory)
-method:reusable chunk of code that accomplishes an action(function)
-ex. main method (entry point to our code)
--> main(){
-}
-we code in an IDE with a compiler
-compilers translate our java to binary
+      /*.... */ /*bulk comment */
 
-/*.... */ /*bulk comment */
+      //......// line comment
 
-//......// line comment
+      //every action in java ends with a //;// \ */ 
 
-//every action in java ends with a //;// \ */ 
+      /* notes day 3: 
+      permitive type: restoring simple information/data (ex. int x = 5;)
+      object (reference) type- storing complex data/objects (ex. creature cat = new creature())
 
-/* notes day 3: 
-permitive type: restoring simple information/data (ex. int x = 5;)
-object (reference) type- storing complex data/objects (ex. creature cat = new creature())
+      primitive variable types to know: 
+      1. int - stores integer/ positive or negative whole numbers 
+      2. double - stores decimal numbers (ex. double x = 5.0;) (ex. double y = 4.25;)
+      3. boolean - stores logic when it is a binary, only options are True or False
 
-primitive variable types to know: 
-1. int - stores integer/ positive or negative whole numbers 
-2. double - stores decimal numbers (ex. double x = 5.0;) (ex. double y = 4.25;)
-3. boolean - stores logic when it is a binary, only options are True or False
+      Object variable types to know:
+      1. String - stores text between quotes ex. "5.0", "Hello world"
 
-Object variable types to know:
-1. String - stores text between quotes ex. "5.0", "Hello world"
+      Setting up variables in code:
+      Declaring + Assigning (effiecient at times when a variable is missing, like not knowing the string)
+      1. Declare Variable --> int x; String name; (entire line of code, just labeling the variables) 
+      2. Assign Variable --> x = 5; name= "Asiya"
 
-Setting up variables in code:
-Declaring + Assigning (effiecient at times when a variable is missing, like not knowing the string)
-1. Declare Variable --> int x; String name; (entire line of code, just labeling the variables) 
-2. Assign Variable --> x = 5; name= "Asiya"
+      double average;
+      average(list of gradees)
+      average = calculus
 
-double average;
-average(list of gradees)
-average = calculus
+      Or do it in ONE STEP 
+      Initialize Variable --> int x = 5; String name = "Asiya"
+      */
 
-Or do it in ONE STEP 
-Initialize Variable --> int x = 5; String name = "Asiya"
-*/
+      /* Notes day 4 9/22
 
-/* Notes day 4 9/22
+      Object-oriented programming: programming built on classes and objects
+      ex.
+      public class MyClass{
+      ~~~~~~~~~~~~~~~~~(numofStudent)
+      ~~~~~~~~~~~~~(Subject)
+      }
+      Class: blueprint of an object (no memory)
+      Object: actual implementation(gets stored in memory)
 
-Object-oriented programming: programming built on classes and objects
-ex.
-public class MyClass{
-~~~~~~~~~~~~~~~~~(numofStudent)
-~~~~~~~~~~~~~(Subject)
-}
-Class: blueprint of an object (no memory)
-Object: actual implementation(gets stored in memory)
+      method: reusable chunk of code that accomplishes an action (function)
+      ex. main method (entry point to our code)
+      -> main(){
+      }
+      we code in an IDE with a compiler
+      compilers translate our java to binary
 
-method: reusable chunk of code that accomplishes an action (function)
-ex. main method (entry point to our code)
--> main(){
-}
-we code in an IDE with a compiler
-compilers translate our java to binary
+      /*.... */ /*bulk comment */
 
-/*.... */ /*bulk comment */
+      //......// line comment
 
-//......// line comment
-
-//every action in java ends with a //;//
-// Notes 9/28
+      //every action in java ends with a //;//
+      // Notes 9/28
 
       //declare a variable
       double myGradeAverage;
@@ -147,15 +143,23 @@ compilers translate our java to binary
       
       System.out.println(myNum);
       //System.out.println(newNum); 
-   //decreementing 
-   myNum= myNum - 1;
-   myNum-; 
-//working with scanner class and text input
-System.out.println("Greetings human! What is your name?");
-Scanner scan = new Scanner(System.in);
+      //decreementing 
+      myNum= myNum - 1;
+      myNum--; 
+      //working with scanner class and text input
+      System.out.println("Greetings human! What is your name?");
+      Scanner scan = new Scanner(System.in);
    
 
+      System.out.println("Hello World");
 
 
-      
-      
+
+
+
+
+
+
+
+   }
+}
