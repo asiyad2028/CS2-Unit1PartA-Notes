@@ -80,10 +80,11 @@ public class Main {
       //......// line comment
 
       //every action in java ends with a //;//
+      
       // Notes 9/28
 
       //declare a variable
-      double myGradeAverage;
+      /*double myGradeAverage;
       //asign a value
       myGradeAverage = 95.0;
 
@@ -108,7 +109,7 @@ public class Main {
       //Assignment 9/28
       System.out.print("Hi ");
       System.out.print("there");
-      System.out.print("!");
+      System.out.print("!"); */
 
       //printing a quote using an escape sequence
       //escape sequences always use a backslash \
@@ -141,7 +142,7 @@ public class Main {
       myNum = myNum + 1;
       //efficient way- myNum++; special short hand case that handles assignment and addition all at once. 
       
-      System.out.println(myNum);
+     /* System.out.println(myNum);
       //System.out.println(newNum); 
       //decreementing 
       myNum= myNum - 1;
@@ -152,13 +153,52 @@ public class Main {
       String name = scan.nextLine();
       System.out.print("Hello " + name); 
       
-      scan.close();
+      scan.close(); */
 
-     // System.out.println("Hello World");
+     /* System.out.println("Hello World");
 
+    //Lesson 1.5 Notes, on Casting- it allows us to change from one data type to another. We are reshaping the value type. 
+    //we cast by using a cast opperator written in () before out expression
+    */
+    double doubleNum = 5.0; 
+    System.out.println((int)doubleNum / 2); 
 
+/* if i want to cast from a double to an int, it will truncate out double 
+   casting from an int to a double just adds .0 to the end */
 
+      System.out.println((int) 4.3); 
+      System.out.println((double) 8); 
+      
+      double number; //positive value from somewhere
+      double negNumber; //negative value from somewhere
 
+      number = 4.0;
+      negNumber = -3.6; 
+      int nearestint = (int)(number + 0.5);
+      int nearestNegInt = (int)(negNumber = 0.5); 
+
+      system.out.println(nearestInt);
+      system.out.println(nearestNegInt); 
+
+      // 1) declare and initialize grades
+// int grade1 = 65;
+// int grade2 = 97;
+// int grade3 = 86;
+
+// 2) declare sum
+// int sum; 248
+
+// 3) declare average as double
+// double average; 82.67
+
+// 4) compute sum 
+// int sum = grade1 + grade2 + grade3;
+
+// 5) compute average with casting
+// average = (double) sum / 3;
+
+// 6) print result
+// System.out.println(average);
 
 
 
