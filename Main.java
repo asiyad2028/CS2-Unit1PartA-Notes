@@ -199,6 +199,45 @@ public class Main {
 
 // 6) print result
 // System.out.println(average);
+/*notes 10/6/26 compound assignment operators 
+-conpound assignment operators always have the math symbol first, and then the equal sign
+
+average= average + 1; 
+average+=1; // These two lines do the same exact thing 
+average++;//most condensed version only increments one or decrements by 1
+System.out.println(average);
+
+//We can do compound operators with any number, not just 1. 
+
+average-=2;
+average--; //most condensed version only increments one or decrements by 1. 
+System.out.println(average); 
+
+//Task 
+
+int score=0;
+System.out.println(score); //0 
+
+score++;           //+1
+system.out.println(score); //1
+
+score *=2;         // x2
+system.out.println(score); //2
+
+int penalty = 5; 
+score -=penalty / 2;   //2-
+(5/2) -> 2 - 2 ->
+
+/* Pre condition- before the method runs, what must be true. Postcondition- after method runs, what must be true */
+
+
+
+
+
+
+
+*/
+
 
 
 
