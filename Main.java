@@ -236,6 +236,8 @@ score -=penalty / 2;   //2-
 //method- a named block (connected to a class and can store code- like information in a variable) of code that performs a task/process when it is called. 
 //main method: main(takes things in) {block of code} *what is takes in- data is called a perameter*
 //procedural abstraction- allowing a programmer to use a method without knowing how it works (w/o knowing all of the details), i.e. "abstracting way" the details. 
+//a method header is the first line of a method that defines: method name, return type and perameter list
+//overloading methods
 
 
 
