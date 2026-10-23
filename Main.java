@@ -239,7 +239,7 @@ score -=penalty / 2;   //2-
 //a method header is the first line of a method that defines: method name, return type and perameter list
 
 /*Calling Static Methods and Non-Void Methods- notes hw
-A static method, also called a class method, is a method that belongs to the class itself rather than to a specific object: it belongs to the class, so you can call it using the class name without creating an object.
+A static method, also called a class method, is a method that belongs to the class without making an object: it belongs to the class, so you can call it using the class name without creating an object.
 - a short example: school fire drill, the instructions apply to everyone and you dont need to ask a student for an indivisual procedure
 */
 public class MathFunctions {
@@ -260,9 +260,8 @@ Part	   Meaning
 public	   The method can be accessed from other classes, subject to access rules.
 static	   The method belongs to the class.
 void	   The method does not return a value.
-sayHello	The method's name.
+sayHello   The method's name.
 ()	The parentheses have the parameters, (if any) */ // for this part of my notes I used some ai because i wanted a more in depth example and was a little confused, please let me know if this is unacceptable and I will delete it. 
-
 /*Void methods vs. Non-void methods 
 Void method performs a value but does not return a value
 Non-Void method calcutlates or gets a value and sends it back using return. 
@@ -299,8 +298,40 @@ In the examples above, we called the methods just by using the method name since
 
 */
 
+/*Class notes 
+instance method- need an object to work
+ex: car{
+getGas()
+updateMiles()}
+Car my
+Van=new Car();
+myVan,getGas()
+*/ 
+ }
 
+ public class Main{
+    public static void main(string []args)
+    //practicing using statc methods from the Math class
+    /* ABSOLUTE VALUE
+        int Math.abs(int x)
+        double Math.abs(double x) 
+        */
+    int z = Math.abs(-45);
+    System.out.println(z); 
 
+    int casted_z = (int) Math.abs(-46.5);
+    system.out.print(casted_z);
+    //power method, math.pow(double x, double n) Can hand it whatever types of numbers (ints or doubles) and will handle it because it will treat both of them as doubles*/
+    double base = 3;
+    double exponent = 4;
+    double solution = Math.pow(base,exponent);
+    system.out.println(soltuion);
 
-   }
+    int int_base = 3;
+    int int_exponent = 4;
+    double other_solution = Math.pow(int_base, int_exponent);
+    System.out.println(other_solution);
+
 }
+}
+
