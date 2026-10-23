@@ -239,7 +239,6 @@ score -=penalty / 2;   //2-
 //a method header is the first line of a method that defines: method name, return type and perameter list
 
 /*Calling Static Methods and Non-Void Methods- notes hw
-What is a static method?
 A static method, also called a class method, is a method that belongs to the class itself rather than to a specific object: it belongs to the class, so you can call it using the class name without creating an object.
 - a short example: school fire drill, the instructions apply to everyone and you dont need to ask a student for an indivisual procedure
 */
@@ -258,62 +257,46 @@ public class MathFunctions {
 //the dot opperator connects a class name to a method name when calling a static method from another class.
 /* Break down of static method - public static void sayHello()
 Part	   Meaning
-public	The method can be accessed from other classes, subject to access rules.
-static	The method belongs to the class.
+public	   The method can be accessed from other classes, subject to access rules.
+static	   The method belongs to the class.
 void	   The method does not return a value.
 sayHello	The method's name.
-()	The parentheses have the parameters, (if any) */
+()	The parentheses have the parameters, (if any) */ // for this part of my notes I used some ai because i wanted a more in depth example and was a little confused, please let me know if this is unacceptable and I will delete it. 
 
 /*Void methods vs. Non-void methods 
-Void method performs a value but does not return a value.
-- public static void greet() {
-    System.out.println("Hi!");
-} Calling greet(); prints Hi!, but the method does not give a value back to the caller.
- Non-Void method calcutlates or gets a value and sends it back using return. 
-- public static int add(int a, int b) {
-    return a + b;
-} Calling add(2, 3) produces the value 5, which can be stored or used in another expression.
-
+Void method performs a value but does not return a value
+Non-Void method calcutlates or gets a value and sends it back using return. 
 The return statement sends a value back to the place where the method was called. It also immediately ends that method's execution.
 - public static int calcArea(int length, int width) {
     int area = length * width;
     return area;
-} 
-The return type is int because the method returns an integer.
+} The return type is int because the method returns an integer.
 Key rule: The return type in the method header must match the type of value returned.
-Return type	Example of a valid return
-int	   return 6;
-double	return 6.5;
-boolean	return true;
-String	return "Hello";
-void     No value is returned;
 
 Non-Void Method(calling)- When a non-void method returns a value, you should use that value. Two common ways are storing it in a variable or using it directly in an expression.
-- int y = calcArea(3,5); // store return value, calcArea(3, 5) returns 15. The variable answer stores 15.
+- int y = calcArea(3,5); // store return value, calcArea(3, 5) returns 15. 
 System.out.println(answer)prints 15.
 System.out.println(y); 
 System.out.println(calcArea(4,2)); // use directly, Java calls the method, gets the returned value 8, and passes it to println.
 
-Common mistakes
-Error	                                    Why it is wrong
-Using void when value must be returned	  A void method does not provide a value to store or calculate with.
-Returning the wrong type	              An int method cannot return a String, for example.
-Forgetting a required return	           A non-void method- return a good fit value on every possible path.
-Using the wrong number of arguments	     The call must match the method's parameters.
-Mixing up argument order	              The method may calculate a different result.
+Memorize 
+Class methods are associated with the class (not instances of the class which we will see in later lessons).
+Class methods include the keyword static in the header before the method name.
+A void method does not have a return value and is therefore not called as part of an expression.
+A non-void method returns a value that is the same type as the return type in the header.
+To use the return value when calling a non-void method, it must be stored in a variable or used as part of an expression.
+Common errors with methods are mismatches in the order or type of arguments, return values, and forgetting to do something with the value returned from a method. When you call a method that returns a value, you should do something with that value like assigning it to a variable or printing it out.
+Class methods are typically called using the class name along with the dot operator. When the method call occurs in the defining class, the use of the class name is optional in the call.
+
+Common Mistakes with non-void methods 
+Forgetting to use the return value — If a method returns a value, assign it to a variable or use it in an expression.
+Mismatched types — Ensure the type you store the return value in matches the method’s return type.
+Incorrect argument types/order — Match the method signature exactly.
+
 
 Calling Methods from Another Class
 In the examples above, we called the methods just by using the method name since they were defined in that same class. However, if we call a method from a different class, another Java program, we need to include its class name. Class methods are typically called using the class name along with the dot operator (.).
 
-Memorize:
-static means the method belongs to the class.
-void means no value is returned.
-A non-void method has a return type such as int, double, or boolean.
-return sends a value back and ends the method.
-Parameters are listed in the method definition; arguments are supplied in the method call.
-A returned value can be stored in a variable, printed, or used in an expression.
-Static methods can typically be called with ClassName.methodName(...) from another class.
-System.out.println(...) prints a value; it does not return a value from your method.
 */
 
 
