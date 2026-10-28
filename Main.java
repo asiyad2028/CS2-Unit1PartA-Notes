@@ -332,6 +332,18 @@ myVan,getGas()
     double other_solution = Math.pow(int_base, int_exponent);
     System.out.println(other_solution);
 
+/* Random method 
+double Math.random()
+gives us a random number between 0.0 and 1.0 NOT INCLUSIVE*/
+ double rand = Math.random();
+System.out.println(rand);
+/* (int)(Math.random()*range) + min 
+    moves the random number into a range starting from a minimum number. 
+  The range of possible values is: 
+(max - min + 1).*/
+// select random integer between 1 and 20
+double other_rand = (int) (Math.random()* 20) + 1; 
+System.out.println(other_rand); 
 }
 }
 
